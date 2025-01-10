@@ -7,12 +7,15 @@ const PostScreen = () => {
     <View style={styles.container}>
       <Text style={styles.title}>Posts Screen</Text>
       <View style={styles.buttonContainer}>
+        {/* @ts-ignore */}
         <Link href="/posts/1" asChild>
           <Button title="Post-1" />
         </Link>
+        {/* @ts-ignore */}
         <Link href="/posts/2" asChild>
           <Button title="Post-2" />
         </Link>
+        {/* @ts-ignore */}
         <Link href="/posts/3" asChild>
           <Button title="Post-3" />
         </Link>

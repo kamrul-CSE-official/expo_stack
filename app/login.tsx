@@ -6,6 +6,7 @@ function LoginScreen() {
   return (
     <View>
       <Text>Login</Text>
+      {/* @ts-ignore */}
       <Link href="/not-found" asChild>
         <Button title="Not Found!" />
       </Link>
