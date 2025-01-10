@@ -4,16 +4,7 @@ import { Button, Text, View } from "react-native";
 
 const RootLayout = () => {
   return (
-    <Stack
-      screenOptions={
-        {
-          // headerStyle: {
-          //   backgroundColor: "black",
-          // },
-          // headerTintColor: "white",
-        }
-      }
-    >
+    <Stack>
       <Stack.Screen
         name="index"
         options={{
@@ -37,6 +28,13 @@ const RootLayout = () => {
         options={{
           title: "Login",
           presentation: "modal",
+        }}
+      />
+      <Stack.Screen
+        name="posts"
+        options={{
+          title: "Posts",
+          headerShown: false,
         }}
       />
     </Stack>

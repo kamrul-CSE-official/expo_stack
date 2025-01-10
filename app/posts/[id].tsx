@@ -1,12 +1,14 @@
 import { View, Text } from "react-native";
 import React from "react";
+import { useLocalSearchParams } from "expo-router";
 
-const PostDetailsScreen = () => {
+const PostDetails = () => {
+  const { id } = useLocalSearchParams();
   return (
     <View>
-      <Text>PostDetailsScreen</Text>
+      <Text>Post Details-{id}</Text>
     </View>
   );
 };
 
-export default PostDetailsScreen;
+export default PostDetails;

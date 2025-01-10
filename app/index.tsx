@@ -6,7 +6,7 @@ const HomeScreen = () => {
   return (
     <View>
       <Text>HomeScreen</Text>
-      <Link href="/posts/index" asChild>
+      <Link href="/posts" asChild>
         <Button title="Posts" />
       </Link>
       <Text>
